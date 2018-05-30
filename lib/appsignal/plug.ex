@@ -30,6 +30,7 @@ if Appsignal.plug?() do
             conn -> Appsignal.Plug.finish_with_conn(transaction, conn)
           end
         end
+        defoverridable call: 2
       end
     end
 
